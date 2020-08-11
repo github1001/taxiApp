@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botView"
+        android:divider="@android:color/transparent"
+        android:listSelector="@null"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/botView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/chatBox"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/sendButton"
+            android:background="@drawable/round_edit"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000"></EditText>
+
+        <TextView
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/round_blue_button"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="SEND"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+</RelativeLayout>
